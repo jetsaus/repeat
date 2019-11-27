@@ -62,6 +62,7 @@
             $number = (-1) * $number;   // инвертируем его
         }
         echo "Преобразовано в $number";
+        
     ?>
 </body>
 </html>
