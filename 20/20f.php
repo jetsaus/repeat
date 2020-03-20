@@ -13,6 +13,10 @@ function findNumNonRec(
     $numeral = 0    // Определяемая цифра
 )
 {
+    // Контроль отрицательных чисел
+    if($number < 0) {
+        $number = $number * -1;
+    }
     $trans  = $number;                  // Объявим промежуточный накопитель
     $flag   = false;                    // Флаг возврата
     do {
