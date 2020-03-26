@@ -13,14 +13,14 @@
         <h3>Решение:</h3>
         <!-- Форма ввода слагаемых времени -->
         <form method="post">
-            <input type="number" size="3" name="lH" min="1" max="999" value="<?php if (isset($lH)) echo $lH;?>"  required>
+            <input type="number" size="3" name="lH" min="0" max="59" value="<?php if (isset($lH)) echo $lH;?>"  required>
             <span>час.</span>
-            <input type="number" size="3" name="lM" min="1" max="999" value="<?php if (isset($lM)) echo $lM;?>"  required>
+            <input type="number" size="3" name="lM" min="0" max="59" value="<?php if (isset($lM)) echo $lM;?>"  required>
             <span>мин.</span>
             <b>+</b>
-            <input type="number" size="3" name="rH" min="1" max="999" value="<?php if (isset($rH)) echo $rH;?>"  required>
+            <input type="number" size="3" name="rH" min="0" max="59" value="<?php if (isset($rH)) echo $rH;?>"  required>
             <span>час.</span>
-            <input type="number" size="3" name="rM" min="1" max="999" value="<?php if (isset($rM)) echo $rM;?>"  required>
+            <input type="number" size="3" name="rM" min="0" max="59" value="<?php if (isset($rM)) echo $rM;?>"  required>
             <span>мин.</span>
             <b>=</b>
 
