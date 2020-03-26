@@ -33,9 +33,12 @@
         } else {
             $rM = 0;
         }
-        // Вызов функции сложения времени
+        // Вывод результатов сложения времени
         if(isset($lH) && isset($lM) && isset($rH) && isset($rM)) {
-            $result = addTime($lH, $lM, $rH, $rM);
+            $buffer = explode(':', addTime($lH, $lM, $rH, $rM));
+            $result = $buffer[0] . ' час., ' . $buffer[1] . 'мин.';
+        } else {
+            $result = 'Что-то пошло не так!';
         }
     
     }
