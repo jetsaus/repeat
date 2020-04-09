@@ -22,6 +22,11 @@
         ];
         
        var_dump($arr);
+
+       echo '<p><i>Вывод необходимых дней недели:</i></p>';
+
+       echo $arr['ru'][0] . '<br>';
+       echo $arr['en'][2] . '<br>';
     ?>
 </body>
 </html>
