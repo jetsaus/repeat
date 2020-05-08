@@ -16,17 +16,17 @@
     <p><i>Создан массив:</i></p>
     <?php
         $arr = ['ru' =>
-                ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Восресенье'],
+                [1=>'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Восресенье'],
                 'en' =>
-                ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                [1=>'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
         ];
         
        var_dump($arr);
 
        echo '<p><i>Вывод необходимых дней недели:</i></p>';
 
-       echo $arr['ru'][0] . '<br>';
-       echo $arr['en'][2] . '<br>';
+       echo $arr['ru'][1] . '<br>';
+       echo $arr['en'][3] . '<br>';
     ?>
 </body>
 </html>
