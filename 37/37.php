@@ -22,15 +22,22 @@
                 [1=>'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
         ];
         var_dump($arr);
-        $lang = 'ru';
-        // $lang = 'en';
+
+        // Язык
+        //$lang = 'ru';
+         $lang = 'en';
+
         echo '<p><i>Задана переменная $lang = ' . "$lang" . '</i></p>';
 
-        echo '<p><i>Вывод необходимых дней недели:</i></p>';
-/*
-        echo $arr['ru'][1] . '<br>';
-        echo $arr['en'][3] . '<br>';
-*/       
+        echo '<p><i>Вывод необходимого дня недели:</i></p>';
+        switch ($lang) {
+            case 'ru':
+                echo $arr['ru'][1] . '<br>';
+                break;
+            case 'en':
+                echo $arr['en'][3] . '<br>';
+                break;
+        }
     ?>
 </body>
 </html>
