@@ -24,18 +24,23 @@
         var_dump($arr);
 
         // Язык
-        //$lang = 'ru';
-         $lang = 'en';
+        $lang = 'ru';
+        //$lang = 'en';
 
-        echo '<p><i>Задана переменная $lang = ' . "$lang" . '</i></p>';
+        // День недели
+        $weekDay = 1;
+        //$weekDay = 3; 
+
+        echo '<p><i>Задана переменная $lang = ' . "$lang" . '<br>' .
+             'День недели $weekDay = ' . "$weekDay" . '</i></p>';
 
         echo '<p><i>Вывод необходимого дня недели:</i></p>';
         switch ($lang) {
             case 'ru':
-                echo $arr['ru'][1] . '<br>';
+                echo $arr['ru'][$weekDay] . '<br>';
                 break;
             case 'en':
-                echo $arr['en'][3] . '<br>';
+                echo $arr['en'][$weekDay] . '<br>';
                 break;
         }
     ?>
