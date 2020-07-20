@@ -2,8 +2,15 @@
 /**
  * Модуль с фунциями и данными
  */
-function separateArr(string $strArr)
+function array_get($array, $key)
 {
-    $arr = explode('.', $strArr);
-    return $arr;
+    $keys = explode('.', $key);
+    $result = $array;
+    while ($k=array_shift($keys)) {
+        if(empty($result[$k])) {
+            throw new Exception('element ' . $key . 'found');
+        }
+        $result = $result[$k];
+    }
+    return $result;
 }
