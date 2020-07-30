@@ -12,6 +12,14 @@
 
     <h3>Решение:</h3>
     <?php
+        require_once('40f.php');
+        $num = 0;
+        $nameSeason = '';
+        for ($i=0; $i<=5; $i++) {
+            $num = $i;
+            $nameSeason = season($num);
+            echo '<i> $num=' . "$i - $nameSeason" . '</i>' . '<br>';
+        }
     ?>
 </body>
 </html>
