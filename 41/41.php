@@ -13,6 +13,10 @@
     <h3>Решение:</h3>
     <?php
         require_once('41f.php');
+        for ($i=0; $i<=33; $i++) {
+            echo '$day = ' . $i . ' - это ';
+            echo decade($i) . '<br>';
+        }
     ?>
 </body>
 </html>
