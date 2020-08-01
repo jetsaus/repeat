@@ -13,7 +13,12 @@
     <h3>Решение:</h3>
     <?php
         include_once('42f.php');
-        
+        // Пройдемся по месяцам года
+        for ($i=0; $i<=13; $i++) {
+            echo '$month=' . $i . ', Сезон года - ';
+            echo season($i);
+            echo '<br>';
+        }
     ?>
 </body>
 </html>
