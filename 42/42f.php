@@ -12,12 +12,12 @@
         } elseif (($month==6) || ($month==7) || ($month==8)) {
             return 'Лето';
         } elseif (($month==9) || ($month==10) || ($month==11)) {
-            echo 'Осень';
+            return 'Осень';
         } else {
-            echo 'Нет такого месяца в году!';
+            return 'Нет такого месяца в году!';
         }
     }
-    function seasonCase(int $month=1)
+    function seasonCase(int $month=0)
     // Возвращает сезон года, в зависимости от месяца
     {
     switch ($month) {
@@ -30,6 +30,6 @@
         case (($month==9) || ($month==10) || ($month==11)):
             return 'Осень';
         default:
-            echo 'Нет такого месяца в году!';
+            return 'Нет такого месяца в году!';
     }
 }
