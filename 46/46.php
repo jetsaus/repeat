@@ -13,7 +13,11 @@
     <h3>Решение:</h3>
     <?php
         include_once '46f.php';
-
+        $strNumber = '1231';                                // Заданное строкой число
+        settype($strNumber, 'int');                         // преобразовано в тип integer
+        $sumDigits = sumDigits($strNumber);                 // и просуммированы его цифры
+        echo '<b><i>Задано число: </i></b>' . $strNumber . ', ';
+        echo '<b><i>Сумма его цифр равна: </i></b>' . $sumDigits;
     ?>
 </body>
 </html>
