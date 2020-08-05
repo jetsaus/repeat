@@ -16,6 +16,7 @@
         // Пройдемся по месяцам года
         for ($i=0; $i<=13; $i++) {
             echo '$month=' . $i . ', Сезон года - ';
+            //echo seasonIf($i);
             echo seasonCase($i);
             echo '<br>';
         }

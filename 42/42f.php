@@ -20,7 +20,7 @@
     function seasonCase(int $month=0)
     // Возвращает сезон года, в зависимости от месяца
     {
-    switch ($month) {
+    switch (true) {
         case (($month==12) || ($month==1) || ($month==2)):
             return 'Зима';
         case (($month==3) || ($month==4) || ($month==5)):
